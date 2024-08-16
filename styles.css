@@ -1,147 +1,148 @@
 /* Base styling */
 body {
-    font-family: 'baskervville', serif;
-    background-color: #1c2520;
-    color: #f1f1f1;
-    margin: 0;
-    padding: 0;
+  font-family: "baskervville", serif;
+  background-color: #1c2520;
+  color: #f1f1f1;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background-color: #161a17;
-    padding: 20px;
-    text-align: center;
+  background-color: #161a17;
+  padding: 20px;
+  text-align: center;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    color: #582222;
+  margin: 0;
+  font-size: 2.5em;
+  color: #582222;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+  display: inline;
+  margin: 0 15px;
 }
 
 nav ul li a {
-    color: #f1f1f1;
-    text-decoration: none;
-    font-size: 1.2em;
-    transition: all ease-in-out 0.2s;
+  color: #f1f1f1;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: all ease-in-out 0.2s;
 }
 
 nav ul li a:hover {
-    color: #334039;
+  color: #334039;
 }
 
 .hero {
-    background-image: url('hero-image.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 100px 200px;
-    text-align: center;
+  background-image: url("hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 200px;
+  text-align: center;
 }
 
 .hero-content h2 {
-    font-size: 3em;
-    color: #f1f1f1;
-    margin: 0;
+  font-size: 3em;
+  color: #f1f1f1;
+  margin: 0;
 }
 
 .hero-content p {
-    font-size: 1.5em;
-    color: #e0e0e0;
+  font-size: 1.5em;
+  color: #e0e0e0;
 }
 
 .posts {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px 20px;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
 }
 
 .posts article {
-    background-color: #232c27;
-    padding: 20px;
-    margin: 15px;
-    border-radius: 5px;
-    width: 30%;
-    text-align: center;
-    opacity: 0.75;
-    transition: all ease-in-out 0.2s
+  background-color: #232c27;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 5px;
+  width: 30%;
+  text-align: center;
+  opacity: 0.75;
+  transition: all ease-in-out 0.2s;
 }
 
 .posts article:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .posts article img {
-    max-width: 100%;
-    border-radius: 5px;
-    }
+  max-width: 100%;
+  border-radius: 5px;
+}
 
 .posts article h3 {
-    color: #9e4040;
-    font-size: 1.8em;
+  color: #9e4040;
+  font-size: 1.8em;
 }
 
 .posts article p {
-    font-size: 1em;
-    color: #d1d1d1;
+  font-size: 1em;
+  color: #d1d1d1;
 }
 
 footer {
-    background-color: #141a16;
-    padding: 20px;
-    text-align: center;
+  background-color: #141a16;
+  padding: 20px;
+  text-align: center;
 }
 
 footer p {
-    margin: 0;
-    font-size: 1em;
-    color: #f1f1f1;
+  margin: 0;
+  font-size: 1em;
+  color: #f1f1f1;
 }
 
 /* Existing styles from your main page */
 
 /* Additional styling for the publications page */
 .content {
-    padding: 5px 5px;
-    text-align: center;
+  padding: 5px 5px;
+  text-align: center;
 }
 
 .publications-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 800px;
-    text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: left;
 }
 
 .publications-list li {
-    background-color: #1b221e;
-    padding: 1px 30px;
-    margin: 10px 0;
-    border-radius: 5px;
+  background-color: #1b221e;
+  padding: 1px 30px;
+  margin: 10px 0;
+  border-radius: 5px;
 }
 
 .publications-list h3 {
-    color: #673030;
-    font-size: 1.2em;
-    padding: 1px;
-    margin: 5px;
+  color: #673030;
+  font-size: 1.2em;
+  padding: 1px;
+  margin: 0px;
 }
 
 .publications-list p {
-    color: #d1d1d1;
-    font-size: 1em;
-    margin: 2px 0 20px;
+  color: #d1d1d1;
+  font-size: 1em;
+  margin: 2px 0 20px;
+  overflow-wrap: break-word;
 }
 .author {
-    margin: 10px 0 0px; 
+  margin: 10px 0 0px;
 }
