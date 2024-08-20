@@ -146,3 +146,87 @@ footer p {
 .author {
   margin: 10px 0 0px;
 }
+
+/* Additional styling for the CV page */
+.content {
+  padding: 5px 5px;
+  text-align: center;
+}
+
+.cv-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: left;
+}
+
+.cv-list li {
+  background-color: #1b221e;
+  padding: 1px 30px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.cv-list h3 {
+  color: #673030;
+  font-size: 1.2em;
+  padding: 10px 0px;
+  margin: 0px;
+}
+
+.cv-list p {
+  color: #d1d1d1;
+  font-size: 1em;
+  margin: 2px 0 20px;
+  overflow-wrap: break-word;
+}
+.cvhead {
+  margin: 10px 0 0px;
+}
+.cvv {
+  list-style: none;
+  color: #d1d1d1;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: left;
+
+  .uni {
+    margin: 10px 0 0px;
+  }
+}
+
+.bio-section {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bio-section img {
+  border-radius: 50%;
+  margin-right: 20px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.teaching {
+  background-image: url("teaching2.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 200px;
+  text-align: center;
+}
+
+.teaching-content h2 {
+  font-size: 3em;
+  color: #f1f1f1;
+  margin: 0;
+}
+
+.teaching-content p {
+  font-size: 1.5em;
+  color: #e0e0e0;
+}
