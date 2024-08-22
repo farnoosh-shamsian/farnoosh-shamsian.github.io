@@ -94,6 +94,10 @@ nav ul li a:hover {
   font-size: 1em;
   color: #d1d1d1;
 }
+.post-link {
+  color: #d1d1d1;
+  text-decoration: none;
+}
 
 footer {
   background-color: #141a16;
@@ -107,11 +111,8 @@ footer p {
   color: #f1f1f1;
 }
 
-/* Existing styles from your main page */
-
-/* Additional styling for the publications page */
 .content {
-  padding: 5px 5px;
+  /* padding: 5px 5px; */
   text-align: center;
 }
 
@@ -229,4 +230,49 @@ footer p {
 .teaching-content p {
   font-size: 1.5em;
   color: #e0e0e0;
+}
+/* .teaching-cards {
+  display: block;
+  width: 30%;
+} */
+.contact {
+  padding: 5px 5px;
+  text-align: center;
+}
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+}
+.contact-list li {
+  background-color: #1b221e;
+  padding: 1px 30px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+.contact-list a {
+  color: #ffffff;
+  padding: 1px 30px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.contact-list h3 {
+  color: #673030;
+  font-size: 1.2em;
+  padding: 1px;
+  margin: 5px;
+}
+
+.contact-list p {
+  color: #d1d1d1;
+  font-size: 1em;
+  margin: 2px 0 20px;
+  overflow-wrap: break-word;
+}
+.contact-link {
+  color: #d1d1d1;
+  text-decoration: none;
 }
