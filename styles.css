@@ -3,9 +3,9 @@
   font-size: clamp(20px, auto, auto);
 }
 body {
-  font-family: "baskervville", serif;
+  font-family: "Cambria";
   background-color: #1c2520;
-  color: #f1f1f1;
+  color: #e9e2d7;
   margin: 0;
   padding: 0;
   font-size: 1.1vw;
@@ -34,7 +34,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #f1f1f1;
+  color: #e9e2d7;
   text-decoration: none;
   font-size: 1.2em;
   transition: all ease-in-out 0.2s;
@@ -54,13 +54,13 @@ nav ul li a:hover {
 
 .hero-content h2 {
   font-size: 3em;
-  color: #f1f1f1;
+  color: #e9e2d7;
   margin: 0;
 }
 
 .hero-content p {
   font-size: 1.5em;
-  color: #e0e0e0;
+  color: #e9e2d7;
 }
 
 .posts {
@@ -98,11 +98,11 @@ nav ul li a:hover {
 
 .posts article p {
   font-size: 1em;
-  color: #d1d1d1;
+  color: #e9e2d7;
 }
 
 .post-link {
-  color: #d1d1d1;
+  color: #e9e2d7;
   text-decoration: none;
 }
 
@@ -116,7 +116,7 @@ footer {
 footer p {
   margin: 0;
   font-size: 1em;
-  color: #f1f1f1;
+  color: #e9e2d7;
 }
 
 .content {
@@ -147,7 +147,7 @@ footer p {
 }
 
 .publications-list p {
-  color: #d1d1d1;
+  color: #e9e2d7;
   font-size: 1.3em;
   margin: 2px 0 20px;
   overflow-wrap: break-word;
@@ -155,7 +155,7 @@ footer p {
 
 .author {
   margin: 10px 0 0px;
-  font-size: 1em;
+  font-size: 1.3em;
 }
 
 .cv-list {
@@ -181,13 +181,13 @@ footer p {
 }
 
 .cv-list p {
-  color: #d1d1d1;
+  color: #e9e2d7;
   font-size: 1.3vw;
   margin: 2px 0 20px;
   overflow-wrap: break-word;
 }
 .cvhead {
-  color: #d1d1d1;
+  color: #e9e2d7;
   font-size: 1.3vw;
   margin: 2px 0 20px;
   overflow-wrap: break-word;
@@ -195,7 +195,7 @@ footer p {
 
 .cvv {
   list-style: none;
-  color: #d1d1d1;
+  color: #e9e2d7;
   padding: 0;
   margin: 0 auto;
   max-width: 800px;
@@ -219,7 +219,7 @@ footer p {
 }
 .bio-text {
   flex: 1;
-  color: #f1f1f1;
+  color: #e9e2d7;
   background-color: transparent;
   padding: 20px;
   text-align: left;
@@ -236,13 +236,13 @@ footer p {
 
 .teaching-content h2 {
   font-size: 3em;
-  color: #f1f1f1;
+  color: #e9e2d7;
   margin: 0;
 }
 
 .teaching-content p {
   font-size: 1.5em;
-  color: #e0e0e0;
+  color: #e9e2d7;
 }
 
 .contact {
@@ -266,7 +266,7 @@ footer p {
 }
 
 .contact-list a {
-  color: #ffffff;
+  color: #e9e2d7;
   padding: 1px 30px;
   margin: 10px 0;
   border-radius: 5px;
@@ -281,14 +281,14 @@ footer p {
 }
 
 .contact-list p {
-  color: #d1d1d1;
+  color: #e9e2d7;
   font-size: 1.2em;
   margin: 2px 0 20px;
   overflow-wrap: break-word;
 }
 
 .contact-link {
-  color: #d1d1d1;
+  color: #e9e2d7;
   text-decoration: none;
 }
 
