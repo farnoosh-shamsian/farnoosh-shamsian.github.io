@@ -25,7 +25,7 @@ nav ul {
 }
 
 nav ul li {
-  display: inline;
+  display: inline-block;
   margin: 0 15px;
 }
 
@@ -61,6 +61,7 @@ nav ul li a:hover {
 
 .posts {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 50px 20px;
 }
@@ -94,6 +95,7 @@ nav ul li a:hover {
   font-size: 1em;
   color: #d1d1d1;
 }
+
 .post-link {
   color: #d1d1d1;
   text-decoration: none;
@@ -112,7 +114,6 @@ footer p {
 }
 
 .content {
-  /* padding: 5px 5px; */
   text-align: center;
 }
 
@@ -144,14 +145,9 @@ footer p {
   margin: 2px 0 20px;
   overflow-wrap: break-word;
 }
+
 .author {
   margin: 10px 0 0px;
-}
-
-/* Additional styling for the CV page */
-.content {
-  padding: 5px 5px;
-  text-align: center;
 }
 
 .cv-list {
@@ -182,9 +178,7 @@ footer p {
   margin: 2px 0 20px;
   overflow-wrap: break-word;
 }
-.cvhead {
-  margin: 10px 0 0px;
-}
+
 .cvv {
   list-style: none;
   color: #d1d1d1;
@@ -192,10 +186,6 @@ footer p {
   margin: 0 auto;
   max-width: 800px;
   text-align: left;
-
-  .uni {
-    margin: 10px 0 0px;
-  }
 }
 
 .bio-section {
@@ -203,6 +193,7 @@ footer p {
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .bio-section img {
@@ -231,14 +222,12 @@ footer p {
   font-size: 1.5em;
   color: #e0e0e0;
 }
-/* .teaching-cards {
-  display: block;
-  width: 30%;
-} */
+
 .contact {
   padding: 5px 5px;
   text-align: center;
 }
+
 .contact-list {
   list-style: none;
   padding: 0;
@@ -246,12 +235,14 @@ footer p {
   max-width: 800px;
   text-align: center;
 }
+
 .contact-list li {
   background-color: #1b221e;
   padding: 1px 30px;
   margin: 10px 0;
   border-radius: 5px;
 }
+
 .contact-list a {
   color: #ffffff;
   padding: 1px 30px;
@@ -259,6 +250,7 @@ footer p {
   border-radius: 5px;
   text-decoration: none;
 }
+
 .contact-list h3 {
   color: #673030;
   font-size: 1.2em;
@@ -272,7 +264,95 @@ footer p {
   margin: 2px 0 20px;
   overflow-wrap: break-word;
 }
+
 .contact-link {
   color: #d1d1d1;
   text-decoration: none;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .hero-content h2 {
+    font-size: 2.5em;
+  }
+
+  .hero-content p {
+    font-size: 1.2em;
+  }
+
+  .posts article {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .bio-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bio-section img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .teaching {
+    padding: 50px 20px;
+  }
+
+  .teaching-content h2 {
+    font-size: 2.5em;
+  }
+
+  .teaching-content p {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  .hero-content h2 {
+    font-size: 2em;
+  }
+
+  .hero-content p {
+    font-size: 1em;
+  }
+
+  .teaching-content h2 {
+    font-size: 2em;
+  }
+
+  .teaching-content p {
+    font-size: 1em;
+  }
+
+  .posts {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .posts article {
+    width: 90%;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
 }
