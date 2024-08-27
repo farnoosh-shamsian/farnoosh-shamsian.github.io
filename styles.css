@@ -1,10 +1,14 @@
 /* Base styling */
+* {
+  font-size: clamp(20px, auto, auto);
+}
 body {
   font-family: "baskervville", serif;
   background-color: #1c2520;
   color: #f1f1f1;
   margin: 0;
   padding: 0;
+  font-size: 1.1vw;
 }
 
 header {
@@ -61,8 +65,8 @@ nav ul li a:hover {
 
 .posts {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-wrap: nowrap;
+  justify-content: center;
   padding: 50px 20px;
 }
 
@@ -75,6 +79,7 @@ nav ul li a:hover {
   text-align: center;
   opacity: 0.75;
   transition: all ease-in-out 0.2s;
+  font-size: 1.2em;
 }
 
 .posts article:hover {
@@ -105,6 +110,7 @@ footer {
   background-color: #141a16;
   padding: 20px;
   text-align: center;
+  font-size: 1em;
 }
 
 footer p {
@@ -115,6 +121,7 @@ footer p {
 
 .content {
   text-align: center;
+  margin: 0 auto;
 }
 
 .publications-list {
@@ -134,47 +141,54 @@ footer p {
 
 .publications-list h3 {
   color: #673030;
-  font-size: 1.2em;
+  font-size: 1.4em;
   padding: 1px;
   margin: 0px;
 }
 
 .publications-list p {
   color: #d1d1d1;
-  font-size: 1em;
+  font-size: 1.3em;
   margin: 2px 0 20px;
   overflow-wrap: break-word;
 }
 
 .author {
   margin: 10px 0 0px;
+  font-size: 1em;
 }
 
 .cv-list {
   list-style: none;
   padding: 0;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1000px;
   text-align: left;
 }
 
 .cv-list li {
   background-color: #1b221e;
   padding: 1px 30px;
-  margin: 10px 0;
+  margin: 20px 0;
   border-radius: 5px;
 }
 
 .cv-list h3 {
   color: #673030;
-  font-size: 1.2em;
+  font-size: 1.5vw;
   padding: 10px 0px;
   margin: 0px;
 }
 
 .cv-list p {
   color: #d1d1d1;
-  font-size: 1em;
+  font-size: 1.3vw;
+  margin: 2px 0 20px;
+  overflow-wrap: break-word;
+}
+.cvhead {
+  color: #d1d1d1;
+  font-size: 1.3vw;
   margin: 2px 0 20px;
   overflow-wrap: break-word;
 }
@@ -203,6 +217,14 @@ footer p {
   height: 300px;
   object-fit: cover;
 }
+.bio-text {
+  flex: 1;
+  color: #f1f1f1;
+  background-color: transparent;
+  padding: 20px;
+  text-align: left;
+  font-size: 1.3vw;
+}
 
 .teaching {
   background-image: url("teaching2.jpg");
@@ -224,16 +246,16 @@ footer p {
 }
 
 .contact {
-  padding: 5px 5px;
+  padding: 10px 5px;
   text-align: center;
 }
 
 .contact-list {
   list-style: none;
-  padding: 0;
+  padding: 20;
   margin: 0 auto;
   max-width: 800px;
-  text-align: center;
+  text-align: match-parent;
 }
 
 .contact-list li {
@@ -253,14 +275,14 @@ footer p {
 
 .contact-list h3 {
   color: #673030;
-  font-size: 1.2em;
+  font-size: 1.4em;
   padding: 1px;
   margin: 5px;
 }
 
 .contact-list p {
   color: #d1d1d1;
-  font-size: 1em;
+  font-size: 1.2em;
   margin: 2px 0 20px;
   overflow-wrap: break-word;
 }
