@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Farnoosh Shamsian</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
       rel="stylesheet"
@@ -14,14 +14,29 @@
     <header>
       <h1>Farnoosh Shamsian</h1>
       <nav>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="teachings.html">Research & Teachings</a></li>
-          <li><a href="cv.html">CV</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a
+              href="./index.html"
+              onclick="if (window.location.pathname === '/') return false;"
+              >Home</a
+            >
+          </li>
+          <li><a href="./pages/publications.html">Publications</a></li>
+          <li><a href="./pages/teachings.html">Research & Teachings</a></li>
+          <li><a href="./pages/cv.html">CV</a></li>
+          <li><a href="./pages/contact.html">Contact</a></li>
         </ul>
       </nav>
+      <script>
+        // Toggle menu on click
+        document
+          .getElementById("menu-icon")
+          .addEventListener("click", function () {
+            document.querySelector("nav ul").classList.toggle("show");
+          });
+      </script>
     </header>
 
     <section class="hero">
@@ -45,7 +60,7 @@
           class="post-link"
           href="https://farnoosh-shamsian.github.io/publications.html"
         >
-          <img src="publish.jpg" alt="Post Image" />
+          <img src="./assets/publish.jpg" alt="Post Image" />
           <h3>Publications</h3>
           <p>Learn more about my research</p></a
         >
@@ -55,7 +70,7 @@
           class="post-link"
           href="https://farnoosh-shamsian.github.io/teachings.html"
         >
-          <img src="teaching.jpg" alt="Post Image" />
+          <img src="./assets/teaching.jpg" alt="Post Image" />
           <h3>Teaching Materials</h3>
           <p>Access some of the datasets I have developed</p>
         </a>
@@ -65,7 +80,7 @@
           class="post-link"
           href="https://farnoosh-shamsian.github.io/contact.html"
         >
-          <img src="contact.jpg" alt="Post Image" />
+          <img src="./assets/contact.jpg" alt="Post Image" />
           <h3>Contact</h3>
           <p>Get in touch!</p>
         </a>
@@ -73,7 +88,7 @@
     </section>
 
     <footer>
-      <p>&copy; Farnoosh Shamsian, 2024</p>
+      <p>&copy; 2024 Farnoosh Shamsian</p>
     </footer>
   </body>
 </html>
