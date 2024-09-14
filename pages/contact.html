@@ -14,6 +14,7 @@
     <header>
       <h1>Farnoosh Shamsian</h1>
       <nav>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="./publications.html">Publications</a></li>
@@ -22,6 +23,14 @@
           <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
+      <script>
+        // Toggle menu on click
+        document
+          .getElementById("menu-icon")
+          .addEventListener("click", function () {
+            document.querySelector("nav ul").classList.toggle("show");
+          });
+      </script>
     </header>
 
     <section class="content">

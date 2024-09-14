@@ -1,0 +1,44 @@
+/* Contact */
+
+.contact {
+  padding: 10px 5px;
+  text-align: center;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 20;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact-list li {
+  background-color: var(--secondary-color);
+  padding: 1px 30px;
+  margin: 10px 0px;
+  border-radius: 5px;
+}
+
+.contact-list a {
+  color: var(--text-color);
+  padding: 20px 30px;
+  margin: 30px 10px 30px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contact-list h3 {
+  color: var(--primary-color);
+  font-size: 1.4em;
+  padding: 1px;
+  margin: 5px 30px;
+}
+
+.contact-list p {
+  color: var(--text-color);
+  font-size: 1.2em;
+  margin: 10px 0 20px;
+  overflow-wrap: break-word;
+}

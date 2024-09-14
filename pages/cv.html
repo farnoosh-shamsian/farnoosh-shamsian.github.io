@@ -14,7 +14,9 @@
     <header>
       <h1>Farnoosh Shamsian</h1>
       <nav>
-        <ul>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+        <ul>         
+          </li>
           <li><a href="../index.html">Home</a></li>
           <li><a href="./publications.html">Publications</a></li>
           <li><a href="./teachings.html">Research & Teachings</a></li>
@@ -22,163 +24,160 @@
           <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
+      <script>
+        // Toggle menu on click
+        document
+          .getElementById("menu-icon")
+          .addEventListener("click", function () {
+            document.querySelector("nav ul").classList.toggle("show");
+          });
+      </script>
     </header>
 
-      <section class="content">
-        <ul class="cv-list">
-            <li>
-          
-          
-<div class="bio-section">
-
-    <article>
-        <img src="../assets/Farnoosh.jpg" alt="Post Image">
-    </article>
-    <div class="bio-text">
-  
-        <h3>
-            Profile
-             </h3>
-             <p>I am a doctoral candidate in Germany specializing in digital philology. I have spent two years of my PhD in the Department of Computer Science and three years in Ancient History, where I had the opportunity to combine language pedagogy with computer science. Currently, I am in the last stages of my doctorate program, with only a few months left to finish my dissertation.</p> 
-             <p>My research interests include digital humanities, classical philology, historical language pedagogy, translation alignment, and the reception of ancient Greek texts in Persian literature.</p>
- 
-
+    <section class="bio">
+      <div class="bio-img-container">
+        <img src="../assets/Farnoosh.jpg" alt="Post Image" />
+      </div>
+      <article class="bio-text">
+        <h3>Profile</h3>
+        <p>
+          I am a doctoral candidate in Germany specializing in digital
+          philology. I have spent two years of my PhD in the Department of
+          Computer Science and three years in Ancient History, where I had the
+          opportunity to combine language pedagogy with computer science.
+          Currently, I am in the last stages of my doctorate program, with only
+          a few months left to finish my dissertation.
         </p>
-    </div>
-</div>
+        <p>
+          My research interests include digital humanities, classical philology,
+          historical language pedagogy, translation alignment, and the reception
+          of ancient Greek texts in Persian literature.
+        </p>
+      </article>
+    </section>
 
+    <section class="content">
+      <h2>Education</h2>
+      <ul class="cv-list">
+        <li>
+          <h3>PhD in Ancient History (October 2019-present)</h3>
+          <div class="cvhead">University of Leipzig, Germany</div>
+          <p>
+            Subject of the Dissertation:
+            <em
+              >Localization of Historical Language Pedagogy through
+              Cross-lingual Annotations: Corpus-based Learning of Ancient Greek
+              in Persian</em
+            >
+          </p>
+          <h3>
+            Master of Arts in Ancient Iranian Languages (September 2014 – July
+            2017)
+          </h3>
+          <div class="cvhead">University of Tehran, Iran</div>
+          <p>
+            Subject of the Dissertation:
+            <em
+              >Grammatical description of the Classical Greek version of
+              Sasanian inscriptions</em
+            >
+          </p>
+          <h3>Bachelor of Arts in Philosophy (September 2009 – July 2014)</h3>
+          <div class="cvhead">Allameh Tabataba'i University, Iran</div>
+          <p></p>
+        </li>
+      </ul>
+    </section>
 
-</li>
-</ul>
-</ul>
-<section class="content">
-<h2>Education</h2>
-<ul class="cv-list">
-    <li>
-</style>
-</head>
-<body>
-          
-            <h3>
-            PhD in Ancient History (October 2019-present)
-            </h3>
-            <div class="cvhead">
-                University of Leipzig, Germany</div>
-            <p>
-              Subject of the Dissertation:
-              <em>Localization of Historical Language Pedagogy through Cross-lingual Annotations: Corpus-based Learning of Ancient Greek in Persian</em>
-            </p>
-            <h3>
-                Master of Arts in Ancient Iranian Languages (September 2014 – July 2017)
-                </h3>
-                <div class="cvhead">
-                    University of Tehran, Iran</div>
-                <p>
-                  Subject of the Dissertation:
-                  <em>Grammatical description of the Classical Greek version of Sasanian inscriptions</em>
-                </p>
-                <h3>
-                    Bachelor of Arts in Philosophy (September 2009 – July 2014)
-                    </h3>
-                    <div class="cvhead">
-                        Allameh Tabataba'i University, Iran</div>
-                    <p>
-                    </p>
-          </li>
-        </ul>
-      
-        <section class="content">
-            <h2>Teaching</h2>
-            <ul class="cv-list">
-                <li>
-              
-                <h3>
-                    Lecturer in Classical Greek (July 2021–Present) 
-                    
-                </h3>
-                <div class="cvhead">
-                    Online independent courses in Persian</div>
-                <p>
-                  <em>As part of my dissertation, I have been teaching Classical Greek to Persian speakers online, from basic to advanced levels. Currently, I am teaching Aeschylus to advanced students on a weekly basis.</em>
-                </p>
-                <h3>
-                    Teacher of Persian Language (March 2023-February 2024)
-                    
-                    
-                    </h3>
-                    <div class="cvhead">
-                        Sächsisches Landesamt für Schule und Bildung, Germany</div>
-                    <p>
-                      <em>Persian language pedagogy has a relatively limited history in the German state of Saxony; therefore, in addition to teaching the language at various levels of proficiency, I am also responsible for instructional design and implementation of the teaching resources.</em>
-                    </p>
-                </p>
-                <h3>
-                    Lecturer in Ancient Greek (September 2022–December 2022)
-                   
-                    
-                                          </h3>
-                    <div class="cvhead">
-                        Tufts University, USA</div>
-                    <p>
-                        <em>At Tufts, I had the opportunity to fully design and teach a course based on my own research on localizing teaching resources with various digital annotations including treebanks and parallel corpora. I also put my own modular grammar, "Didakta Grammar for Annotation," to the test.
-                            Methods of this course were already in use in Persian and are being translated to Portuguese and Kurdish by colleagues who wish to localize pedagogical resources in their own language.
-                            
+    <section class="content">
+      <h2>Teaching</h2>
+      <ul class="cv-list">
+        <li>
+          <h3>Lecturer in Classical Greek (July 2021–Present)</h3>
+          <div class="cvhead">Online independent courses in Persian</div>
+          <p>
+            <em
+              >As part of my dissertation, I have been teaching Classical Greek
+              to Persian speakers online, from basic to advanced levels.
+              Currently, I am teaching Aeschylus to advanced students on a
+              weekly basis.</em
+            >
+          </p>
+          <h3>Teacher of Persian Language (March 2023-February 2024)</h3>
+          <div class="cvhead">
+            Sächsisches Landesamt für Schule und Bildung, Germany
+          </div>
+          <p>
+            <em
+              >Persian language pedagogy has a relatively limited history in the
+              German state of Saxony; therefore, in addition to teaching the
+              language at various levels of proficiency, I am also responsible
+              for instructional design and implementation of the teaching
+              resources.</em
+            >
+          </p>
+          <h3>Lecturer in Ancient Greek (September 2022–December 2022)</h3>
+          <div class="cvhead">Tufts University, USA</div>
+          <p>
+            <em
+              >At Tufts, I had the opportunity to fully design and teach a
+              course based on my own research on localizing teaching resources
+              with various digital annotations including treebanks and parallel
+              corpora. I also put my own modular grammar, "Didakta Grammar for
+              Annotation," to the test. Methods of this course were already in
+              use in Persian and are being translated to Portuguese and Kurdish
+              by colleagues who wish to localize pedagogical resources in their
+              own language.
+            </em>
+          </p>
+          <h3>Lecturer in Classical Greek (October 2018–May 2019)</h3>
+          <div class="cvhead">
+            Institute for Humanities and Cultural Studies, Iran
+          </div>
+          <p>
+            <em
+              >In the two courses that I held in IHCS, I had the chance to
+              incorporate my recently acquired knowledge of digital annotations
+              and methods in my teaching. However, my collaboration with Iranian
+              academic institutions ended when I moved to Germany in June 2019.
+            </em>
+          </p>
 
-                        </em>
-                    </p>
-                    <h3>
-                        Lecturer in Classical Greek (October 2018–May 2019)
-                                              </h3>
-                        <div class="cvhead">
-                            Institute for Humanities and Cultural Studies, Iran</div>
-                        <p>
-                            <em>In the two courses that I held in IHCS, I had the chance to incorporate my recently acquired knowledge of digital annotations and methods in my teaching. However, my collaboration with Iranian academic institutions ended when I moved to Germany in June 2019.
+          <h3>Lecturer in Classical Greek (February 2017–June 2018)</h3>
+          <div class="cvhead">
+            Allameh Tabataba'i University and University of Tehran, Iran
+          </div>
+          <p>
+            <em
+              >When I started teaching Classical Greek at my almae matres, I
+              encountered the limitations of using an English textbook to teach
+              Persian speakers and became interested in localization of language
+              pedagogy. Therefore, I wrote a PhD proposal for Professor Crane,
+              one of the pioneers and most influential researchers of Digital
+              Classics who held positions both at Leipzig University and Tufts
+              University and was accepted as his PhD student.
+            </em>
+          </p>
+        </li>
+      </ul>
+    </section>
 
-                            </em>
-                       
-                            <h3>
-                                Lecturer in Classical Greek (February 2017–June 2018)
+    <section class="content">
+      <h2>Awards & Grants</h2>
+      <ul class="cv-list">
+        <li>
+          <h3>
+            DAAD scholarship: Research Grants - Doctoral Program in Germany
+          </h3>
+          <div class="cvhead">October 2019- March 2024</div>
 
-                                
-                                
-                                
-                                                      </h3>
-                                <div class="cvhead">
-                                    Allameh Tabataba'i University and University of Tehran, Iran</div>
-                                <p>
-                                    <em>When I started teaching Classical Greek at my almae matres, I encountered the limitations of using an English textbook to teach Persian speakers and became interested in localization of language pedagogy. Therefore, I wrote a PhD proposal for Professor Crane, one of the pioneers and most influential researchers of Digital Classics who held positions both at Leipzig University and Tufts University and was accepted as his PhD student. 
-        
-                                    </em>
-                                </p>
-                    </li>
-            </ul>
-          </ul>
-          <section class="content">
-            <h2>Awards & Grants</h2>
-            <ul class="cv-list">
-                <li>
-              
-                <h3>
-                    DAAD scholarship: Research Grants - Doctoral Program in Germany 
-                </h3>
-                <div class="cvhead">
-                    October 2019- March 2024</div>
-            
-                    <p>
-        
-                    </p>
-                
-              </li>
-            </ul>
-          </ul>
-      </section>
-    </header>
+          <p></p>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; Farnoosh Shamsian, 2024</p>
+    </footer>
   </body>
-</html>
-</section>
-
-  <footer>
-  <p>&copy; Farnoosh Shamsian, 2024</p>
-</footer>
-</body>
 </html>

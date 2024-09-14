@@ -1,19 +1,16 @@
+@import url("./variables.css");
+@import url("./navigation.css");
+@import url("./publications.css");
+@import url("./cv.css");
+@import url("./contact.css");
+@import url("./footer.css");
+
 * {
   box-sizing: border-box;
-  border: 1px dotted rgba(255, 0, 0, 0.377);
+  /* border: 1px dotted rgba(255, 0, 0, 0.377); */
 }
 
-:root {
-  --primary-color: #612a2a;
-  --article-header-color: #913333;
-  --secondary-color: #171f19;
-  --footer-color: #111712;
-  --background-color: #1a231c;
-  --text-color: #e9e4db;
-
-  --header-font-size: clamp(32px, 3.3vw, 60px);
-  --nav--font-size: clamp(16px, 1vw, 20px);
-}
+/* General, Home, Teaching */
 
 body {
   width: 100%;
@@ -22,104 +19,6 @@ body {
   color: var(--text-color);
   margin: 0 auto;
 }
-
-header {
-  padding: 20px;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-  font-size: var(--header-font-size);
-  color: var(--primary-color);
-}
-
-nav {
-  overflow: hidden;
-}
-
-nav .menu-icon {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-  padding: 10px 20px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
-}
-
-nav ul li {
-  padding: 14px 20px;
-}
-
-nav ul li a {
-  display: block;
-  color: var(--text-color);
-  text-decoration: none;
-  font-size: var(--nav--font-size);
-  transition: all ease-in-out 0.2s;
-}
-
-nav ul li a:hover {
-  color: var(--primary-color);
-}
-
-nav ul.show {
-  max-height: 300px;
-}
-
-/* Large screen layout - show the menu horizontally */
-@media screen and (min-width: 601px) {
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    max-height: none;
-  }
-
-  nav .menu-icon {
-    display: none; /* Hide the menu icon on large screens */
-  }
-}
-
-/* Responsive layout - hide the menu and show the icon */
-@media screen and (max-width: 600px) {
-  nav ul {
-    /* flex-direction: column;
-    display: none;
-    width: 100%; */
-    display: flex;
-  }
-
-  /* nav ul.show {
-    display: flex;
-  } */
-
-  nav .menu-icon {
-    display: block;
-    color: var(--text-color);
-    transition: all ease-in-out 0.2s;
-  }
-
-  nav .menu-icon:hover {
-    color: var(--primary-color);
-  }
-
-  nav ul li {
-    text-align: center;
-    padding: 10px;
-  }
-}
-
-/* media query end */
 
 .hero {
   background-size: cover;
@@ -141,6 +40,20 @@ nav ul.show {
 .hero-content p {
   font-size: 1.5em;
   color: var(--text-color);
+}
+
+.teaching-hero {
+  background-image: url("../assets/teaching2.jpg");
+}
+
+.teaching-content p {
+  font-size: 1.5em;
+  color: var(--text-color);
+}
+
+.content {
+  text-align: center;
+  margin: 0 auto;
 }
 
 .posts {
@@ -200,183 +113,6 @@ nav ul.show {
 }
 
 .post-link {
-  color: var(--text-color);
-  text-decoration: none;
-}
-
-footer {
-  background-color: var(--footer-color);
-  padding: 20px;
-  text-align: center;
-  font-size: 1em;
-}
-
-footer p {
-  margin: 0;
-  font-size: 1em;
-  color: var(--text-color);
-}
-
-.content {
-  text-align: center;
-  margin: 0 auto;
-}
-
-.publications-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 800px;
-  text-align: left;
-}
-
-.publications-list li {
-  background-color: var(--secondary-color);
-  padding: 1px 30px;
-  margin: 10px 0;
-  border-radius: 5px;
-}
-
-.publications-list h3 {
-  color: var(--primary-color);
-  font-size: 1.4em;
-  padding: 1px;
-  margin: 0px;
-}
-
-.publications-list p {
-  color: var(--text-color);
-  font-size: 1.3em;
-  margin: 2px 0 20px;
-  overflow-wrap: break-word;
-}
-
-.author {
-  margin: 10px 0 0px;
-  font-size: 1.3em;
-}
-
-.cv-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 1000px;
-  text-align: left;
-}
-
-.cv-list li {
-  background-color: var(--secondary-color);
-  padding: 1px 30px;
-  margin: 20px 0;
-  border-radius: 5px;
-}
-
-.cv-list h3 {
-  color: var(--primary-color);
-  font-size: 1.5vw;
-  padding: 10px 0px;
-  margin: 0px;
-}
-
-.cv-list p {
-  color: var(--text-color);
-  font-size: 1.3vw;
-  margin: 2px 0 20px;
-  overflow-wrap: break-word;
-}
-.cvhead {
-  color: var(--text-color);
-  font-size: 1.3vw;
-  margin: 2px 0 20px;
-  overflow-wrap: break-word;
-}
-
-.cvv {
-  list-style: none;
-  color: var(--text-color);
-  padding: 0;
-  margin: 0 auto;
-  max-width: 800px;
-  text-align: left;
-}
-
-.bio-section {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
-}
-
-.bio-section img {
-  border-radius: 50%;
-  margin-right: 20px;
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-}
-.bio-text {
-  flex: 1;
-  color: var(--text-color);
-  background-color: transparent;
-  padding: 20px;
-  text-align: left;
-  font-size: 1.3vw;
-}
-
-.teaching-hero {
-  background-image: url("../assets/teaching2.jpg");
-}
-
-.teaching-content p {
-  font-size: 1.5em;
-  color: var(--text-color);
-}
-
-.contact {
-  padding: 10px 5px;
-  text-align: center;
-}
-
-.contact-list {
-  list-style: none;
-  padding: 20;
-  margin: 0 auto;
-  max-width: 800px;
-  text-align: center;
-}
-
-.contact-list li {
-  background-color: var(--secondary-color);
-  padding: 1px 30px;
-  margin: 10px 0px;
-  border-radius: 5px;
-}
-
-.contact-list a {
-  color: var(--text-color);
-  padding: 20px 30px;
-  margin: 30px 10px 30px;
-  border-radius: 5px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.contact-list h3 {
-  color: var(--primary-color);
-  font-size: 1.4em;
-  padding: 1px;
-  margin: 5px 30px;
-}
-
-.contact-list p {
-  color: var(--text-color);
-  font-size: 1.2em;
-  margin: 10px 0 20px;
-  overflow-wrap: break-word;
-}
-
-.contact-link {
   color: var(--text-color);
   text-decoration: none;
 }

@@ -1,0 +1,11 @@
+:root {
+  --primary-color: #612a2a;
+  --article-header-color: #913333;
+  --secondary-color: #171f19;
+  --footer-color: #111712;
+  --background-color: #1a231c;
+  --text-color: #e9e4db;
+
+  --header-font-size: clamp(32px, 3.3vw, 60px);
+  --nav--font-size: clamp(16px, 1vw, 20px);
+}
