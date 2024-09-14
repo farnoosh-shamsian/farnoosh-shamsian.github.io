@@ -1,0 +1,14 @@
+/* Footer */
+
+footer {
+  background-color: var(--footer-color);
+  padding: 20px;
+  text-align: center;
+  font-size: 1em;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1em;
+  color: var(--text-color);
+}

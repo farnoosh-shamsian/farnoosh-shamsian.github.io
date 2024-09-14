@@ -1,0 +1,61 @@
+/* CV */
+
+.cv-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 80%;
+  /* max-width: 1000px; */
+  text-align: left;
+}
+
+.cv-list li {
+  background-color: var(--secondary-color);
+  padding: 1px 30px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.cv-list h3 {
+  color: var(--primary-color);
+  font-size: 1.5vw;
+  padding: 10px 0px;
+  margin: 0px;
+}
+
+.cv-list p {
+  color: var(--text-color);
+  font-size: 1.3vw;
+  margin: 2px 0 20px;
+  overflow-wrap: break-word;
+}
+.cvhead {
+  color: var(--text-color);
+  font-size: 1.3vw;
+  margin: 2px 0 20px;
+  overflow-wrap: break-word;
+}
+
+.bio {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.bio-img-container img {
+  border-radius: 50%;
+  margin-right: 20px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.bio-text {
+  flex: 1;
+  color: var(--text-color);
+  background-color: transparent;
+  padding: 20px;
+  text-align: left;
+  font-size: 1.3vw;
+}
