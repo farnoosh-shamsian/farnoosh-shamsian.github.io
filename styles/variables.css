@@ -5,6 +5,7 @@
   --footer-color: #111712;
   --background-color: #1a231c;
   --text-color: #e9e4db;
+  --link-color: #d3942f;
 
   --header-font-size: clamp(32px, 3.3vw, 60px);
   --nav--font-size: clamp(16px, 1vw, 20px);
