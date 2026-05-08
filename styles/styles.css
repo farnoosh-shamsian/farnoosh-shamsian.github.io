@@ -115,3 +115,7 @@ body {
   color: var(--text-color);
   text-decoration: none;
 }
+
+.hero-content {
+  color: var(--hero-text-color);
+}
