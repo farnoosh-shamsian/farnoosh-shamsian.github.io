@@ -1,12 +1,12 @@
 :root {
   --primary-color: #530707;
   --article-header-color: #5b0000;
-  --secondary-color: #6f6c63;
-  --footer-color: #928e83;
-  --background-color: #898473;
+  --secondary-color: #b3ab9a;
+  --footer-color: #b3ab9a;
+  --background-color: #c4bca9;
   --text-color: #1f1c16;
   --link-color: #2b2116;
-  --hero-text-color: #adafa7;
+  --hero-text-color: #cacbc4;
   --header-font-size: clamp(32px, 3.3vw, 60px);
   --nav--font-size: clamp(16px, 1vw, 20px);
 }
